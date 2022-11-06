@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import Button from 'react-bootstrap/Button';
 //import './sass/App.scss';
 import App from './App';
 
@@ -14,12 +15,12 @@ const ThemeSelector = ({children}) => {
     <React.Suspense fallback={<>...Loading</>} key={theme}>
       {theme === 'dark' && <DarkTheme />}
       {theme === 'light' && <LightTheme />}
-      <button onClick={() => {
+      <Button variant="danger" onClick={() => {
         localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark');
         window.location.reload()
       }}> 
         Change Mode
-      </button>
+      </Button>
       {children}
     </React.Suspense>
   )
