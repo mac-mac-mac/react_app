@@ -5,10 +5,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Header 
-        linkText="Learn React"
-        linkUrl="https://reactjs.org"
-      />
+      <Header />
     </div>
   );
 }
