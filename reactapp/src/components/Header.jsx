@@ -1,5 +1,4 @@
 import React from "react";
-import About from './About';
 
 class Header extends React.Component{
 
@@ -16,8 +15,6 @@ class Header extends React.Component{
                 <h1> Mac Barron </h1>
                 <code> Front End Web Developer </code>
                 <h4> Columbus, GA </h4>
-                <br />
-                <About />
             </header>
         )
     }
