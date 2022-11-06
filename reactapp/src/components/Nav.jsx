@@ -4,28 +4,28 @@ import Nav from 'react-bootstrap/Nav';
 
 function MyNav() {
     return(
-        <Nav className="justify-content-center" activeKey="/home">
+        <Nav className="justify-content-center Nav" activeKey="/home">
             <Nav.Item>
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#home"><code>HOME</code></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="#ab">About</Nav.Link>
+                <Nav.Link href="#ab"><code>ABOUT</code></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="#exp">Experience</Nav.Link>
+                <Nav.Link href="#exp"><code>EXPERIENCE</code></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="#edu">Education</Nav.Link>
+                <Nav.Link href="#edu"><code>EDUCATION</code></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="#sk">Skills</Nav.Link>
+                <Nav.Link href="#sk"><code>SKILLS</code></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Button variant="secondary" onClick={() => {
+                <Button variant="dark" onClick={() => {
                     localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark');
                     window.location.reload()
                 }}> 
-                    Toggle Light/Dark Mode
+                    <code>TOGGLE LIGHT/DARK MODE</code>
                 </Button>
             </Nav.Item>
         </Nav>  

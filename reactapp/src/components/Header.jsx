@@ -12,7 +12,7 @@ class Header extends React.Component{
     render(){
         return(
             <header className={`App-header ${this.state.theme}`} id="home">
-                <h1> Mac Barron </h1>
+                <h1> MAC BARRON </h1>
                 <code> Front End Web Developer </code>
                 <h4> Columbus, GA </h4>
             </header>

@@ -50,19 +50,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-p {
-  font-size: calc(8px + 1vmin);
+    color: $codeColor;
 }
 
 h2 {
   text-decoration: underline;
+  color: $TitleTextColor;
 }
 
 .About, .Experience, .Education, .Skills {
-  color: $white-color;
   padding: 25px;
+  color: $white-color;
+}
+
+.Nav, .About, .Experience, .Education, .Skills {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $borderColor;
+  border-collapse: collapse;
+}
+
+.Nav {
+  background-color: $NavBGColor;
 }
 
 .About {
@@ -79,4 +88,14 @@ h2 {
 
 .Skills {
   background-color: $SkillsBGColor;
+}
+
+.about, .job, .school, .skill {
+  border-style: solid;
+  border-width: 5px;
+  border-color: $borderColor;
+  border-collapse: collapse;
+  background-color: $BGcolor;
+  opacity: 0.5;
+  padding: 25px;
 }

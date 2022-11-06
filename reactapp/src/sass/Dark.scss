@@ -1,11 +1,16 @@
-$background-color: #282c34;
+$background-color: black;
 $white-color: white;
-$link-color: #61dafb;
+$link-color: white;
 
-$AboutBGColor: blue;
-$ExperienceBGColor: green;
-$EducationBGColor: yellow;
-$SkillsBGColor: red;
+$NavBGColor: #1d2329;
+$AboutBGColor: #1d2329;
+$ExperienceBGColor: #312622;
+$EducationBGColor: #1d2329;
+$SkillsBGColor: #312622;
 
+$TitleTextColor: #eae4e4;
+$borderColor: white;
+$BGcolor: black;
+$codeColor: #9CFF00;
 
 @import 'App'
