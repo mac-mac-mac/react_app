@@ -12,8 +12,6 @@ class Header extends React.Component{
         }
     }
 
-    //lifecycle methods
-
     render(){
         const { linkText, linkUrl } = this.props
         const name = this.state.name
