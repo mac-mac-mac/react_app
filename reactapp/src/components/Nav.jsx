@@ -9,17 +9,23 @@ function MyNav() {
                 <Nav.Link href="#home">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="link-1">Link</Nav.Link>
+                <Nav.Link href="#ab">About</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
+                <Nav.Link href="#exp">Experience</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="#edu">Education</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="#sk">Skills</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Button variant="secondary" onClick={() => {
                     localStorage.setItem('theme', localStorage.getItem('theme') === 'dark' ? 'light' : 'dark');
                     window.location.reload()
                 }}> 
-                    Change Mode
+                    Toggle Light/Dark Mode
                 </Button>
             </Nav.Item>
         </Nav>  
